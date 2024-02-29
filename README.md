@@ -23,6 +23,7 @@ The Sales Forecasting Application is a comprehensive tool designed to empower bu
 - Python 3.x
 - Node.js and npm
 - Power BI Desktop
+- Angular
 
 ### Installation
 
@@ -30,29 +31,30 @@ The Sales Forecasting Application is a comprehensive tool designed to empower bu
    ```bash
    git clone https://github.com/yourusername/sales-forecast-app.git
 
-  -- ### Setup Virtual Environment:
-  --bash
-  --Copy code
-  --cd sales-forecast-app
-  --python -m venv venv
-  --source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+### Setup Virtual Environment
+
+  - bash
+  - Copy code
+  - cd sales-forecast-app
+  - python -m venv venv
+  - source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
   
-  -- ### Install Dependencies:
-  --bash
-  --Copy code
-  --pip install -r requirements.txt
-  --cd frontend
-  --npm install
-  -- ### Run the Application:
-  -- ### Start Flask Backend:
-  --bash
-  --Copy code
-  --flask run
-  -- Open a new terminal and navigate to the frontend directory:
-  --bash
-  --Copy code
-  --ng serve
-## DEMO
+### Install Dependencies:
+  - bash
+  - Copy code
+  - pip install -r requirements.txt
+  - cd frontend
+  - npm install
+### Run the Application:
+### Start Flask Backend:
+  - bash
+  - Copy code
+  - flask run
+  - Open a new terminal and navigate to the frontend directory:
+  - bash
+  - Copy code
+  - ng serve
+## Demo
 ![image](https://github.com/vasangit/salesforecast/assets/114461223/958c29d0-63b2-423a-8377-158afe6440bd)
 ![image](https://github.com/vasangit/salesforecast/assets/114461223/12757040-a484-46a1-aeea-24f0b6789162)
 ![image](https://github.com/vasangit/salesforecast/assets/114461223/75f2177a-0e46-4d70-ab84-1666af02ee0b)
