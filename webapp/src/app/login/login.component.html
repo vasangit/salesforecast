@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width,initial-scale=1.0">
+        <title>login</title>
+        <link rel="stylesheet" href="login.component.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        <section>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h1 >FRS</h1>
+                    <h1>login</h1>
+                    
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate class="d-flex-center">
+                        <div class="input-field">
+                            <ul style="font-size: 20px;"><i class="fa-solid fa-user"></i>Username</ul>
+                            <mat-form-field>
+            
+                                <input  matInput  formControlName="email" placeholder="-Email">
+                                <mat-error *ngIf="!loginForm.get('email')?.errors?.required && (loginForm.get('email')?.errors?.pattern)">
+                                  Please enter a valid email address
+                                </mat-error>
+                                <mat-error *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched) && loginForm.get('email')?.errors?.required">
+                                  Email is required
+                                </mat-error>
+                              </mat-form-field>
+
+
+
+                            </div>
+                    
+
+                        <div class="input-field">
+                            <ul style="font-size: 20px;"><i class="fa-solid fa-key"></i>password</ul>
+                            <mat-form-field>
+                                <input matInput type="password" placeholder="-Login Pin" formControlName="password"> 
+                                <mat-error *ngIf="!loginForm.get('password')?.errors?.required">
+                                Password length must be greater than or equal to 8 :)
+                                </mat-error>
+                                <mat-error *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched) && loginForm.get('password')?.errors?.required">
+                                  Password is required
+                                </mat-error>
+                              </mat-form-field>
+
+
+                            
+                            </div>
+
+                        
+                        <div class="input-field">
+                            
+
+                            <button [disabled]="!loginForm.valid" mat-button color="primary" mat-button>Login</button>
+                        
+
+                        <p >Forgot password ? <a routerLink="/passwordreset">Click Here</a></p>
+                        <br>
+                        <p >Don't have an account ? <a routerLink="/signup"><button>Signup</button></a></p>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

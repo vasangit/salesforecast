@@ -1,0 +1,7 @@
+Flask
+werkzeug
+flask-session
+pytz
+requests
+flask-pymongo
+dnspython
